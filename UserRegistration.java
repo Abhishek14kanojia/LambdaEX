@@ -1,7 +1,7 @@
 package com.lambdaExp;
 
 public class UserRegistration {
-
+ 
 	private static final String First_Name = "^[A-Z]{1}[a-z]{2,}$";;
     private static final String Last_Name = "^[A-Z]{1}[a-z]{2,}$";
     private static final String Email_ID =  "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$";
@@ -12,7 +12,7 @@ public class UserRegistration {
     public boolean validateFirstName(String firstName) throws InvalidUserException {
         try
         {
-            if (firstName.matches(First_Name)) {
+            if (firstName.matches(First_Name)) { 
                 return true;
             } else {
                 throw new InvalidUserException(InvalidUserException.ExceptionType.ENTERED_INVALID, "Please provide Specific format");
